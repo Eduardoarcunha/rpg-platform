@@ -1,0 +1,175 @@
+.character {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-top {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    color: white;
+    margin: 0 0 2rem 0;
+}
+
+.top-info {
+    margin: 0 1rem;
+    font-weight: 500;
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media (max-width: 800px) {
+    .character-top {
+        width: 100%;
+        font-size: small;
+    }
+}
+/* PARTE MÉDIA DO PERSONAGEM */
+
+.character-middle {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 30%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.character-middle > img {
+    height: 100px;
+}
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PARTE INFERIOR DO PERSONAGEM */
+
+.character-bottom {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    gap: 1rem;
+    justify-content: space-around;
+    color: white;
+    margin: 2rem 0 0 0;
+}
+
+@media (max-width: 800px) {
+    .character-bottom {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .defenses-container,
+    .resistances-container,
+    .others-container {
+        width: 100%;
+    }
+}
+.defenses-container,
+.resistances-container,
+.others-container {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: transparent #252526 1px;
+    box-shadow: 0px 4px 8px #000000;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+.defense-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.2rem;
+}
+.resistance-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr;
+    gap: 0.2rem;
+}
+.other-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.2rem;
+}
+
+.defense-title,
+.resistance-title,
+.other-title {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    text-align: center;
+}
+
+.edit-icons-container {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    color: #999999;
+}
+.confirm-icon {
+    margin-right: 0.2rem;
+    color: #999999;
+}
+.close-icon {
+    color: #999999;
+}
+
+.confirm-icon:hover,
+.close-icon:hover,
+.edit-icon:hover {
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+
+.character-bottom-input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 50%;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: medium;
+}
+.character-bottom-input::-webkit-outer-spin-button,
+.character-bottom-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

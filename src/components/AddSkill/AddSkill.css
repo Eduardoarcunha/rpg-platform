@@ -1,0 +1,170 @@
+.addskill {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0.5rem;
+    border: solid #252526 1px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px #000000;
+    background-color: #1e1e1e;
+}
+
+/* NOME */
+
+.name-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 0.5rem;
+}
+.name-input-container > .name-title {
+    color: white;
+}
+
+.name-input-container > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+
+/* CUSTO */
+
+.cost-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 0.5rem;
+}
+.cost-input-container .cost-title {
+    color: white;
+}
+.cost-input-container > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+.cost-input-container .cost-p-add {
+    text-align: center;
+    color: white;
+}
+
+.damage-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    margin-bottom: 0.5rem;
+}
+.damage-input-container > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+.damage-p-d {
+    text-align: center;
+    color: white;
+}
+.damage-p-add {
+    text-align: center;
+    color: white;
+}
+
+.damage-input-container-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr 1fr 4fr;
+    margin-bottom: 1rem;
+}
+
+.damage-input-container-2 > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+.damage-subtitle {
+    font-size: small;
+    font-style: italic;
+    color: #b6b3b3;
+    display: flex;
+    align-items: center;
+}
+
+.description-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 0.5rem;
+}
+.description-title {
+    color: white;
+}
+.description-input-container > textarea {
+    resize: none;
+    border: 0;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    padding-left: 0.3rem;
+}
+
+.add-button {
+    margin-top: 0.2rem;
+    align-self: center;
+    width: fit-content;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: gray;
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+}
+
+.add-button:hover {
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}

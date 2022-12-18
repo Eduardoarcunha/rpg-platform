@@ -1,0 +1,117 @@
+.equipment-info {
+    width: 70%;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.equipment-info > h4 {
+    color: white;
+    border-bottom: solid white 1px;
+}
+
+.proficiency-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 1rem;
+    border: solid #252526 1px;
+    box-shadow: 0px 4px 8px #000000;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    position: relative;
+}
+.edit-proficiency {
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    color: #999999;
+}
+.edit-proficiency:hover {
+    color: white;
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+
+.proficiencies {
+    margin-top: 0.5rem;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.proficiencies > li {
+    color: white;
+    font-size: medium;
+    margin-left: 1rem;
+}
+.armor-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 1rem;
+    border: solid #252526 1px;
+    box-shadow: 0px 4px 8px #000000;
+    background-color: #1e1e1e;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: relative;
+}
+@media (max-width: 800px) {
+    .armor-container {
+        width: 80%;
+    }
+    .proficiency-container {
+        width: 80%;
+    }
+}
+
+.armors {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.armors > p {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .equipment-info {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .armor-container {
+        width: 100%;
+    }
+}
+.armors-labels {
+    color: white;
+}
+
+.protection-input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-size: medium;
+    width: 30%;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,36 @@
+.ritual {
+    display: flex;
+    flex-direction: column;
+    border: solid #252526 1px;
+    box-shadow: 0px 4px 8px #000000;
+    border-radius: 0.5rem;
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1rem;
+    position: relative;
+    background-color: #1e1e1e;
+}
+.ritual > h4 {
+    color: white;
+    margin-bottom: 0.2rem;
+}
+.ritual > p {
+    color: white;
+    margin: 0.1rem;
+    margin-bottom: auto;
+}
+.ritual-delete {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #999999;
+    cursor: pointer;
+}
+.ritual-delete:hover {
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+}

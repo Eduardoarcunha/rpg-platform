@@ -1,0 +1,132 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.3
+    ); /*this sets the slightly see-through black*/
+    z-index: 100; /*Make this less than the existing popup div*/
+}
+
+.status-bar-popup {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 25%;
+    height: 15%;
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .status-bar-popup {
+        width: 85%;
+        height: 20%;
+    }
+}
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: larger;
+    color: #999999;
+}
+.close:hover {
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+.max-container,
+.actual-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.max-container > p,
+.actual-container > p {
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+    color: white;
+}
+
+.max-container > input,
+.actual-container > input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    outline: 0;
+    color: white;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+}
+
+.max-container > input::-webkit-outer-spin-button,
+.max-container > input::-webkit-inner-spin-button,
+.actual-container > input::-webkit-outer-spin-button,
+.actual-container > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.update-status {
+    margin-top: 0.2rem;
+    align-self: center;
+    width: fit-content;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #999999;
+    font-weight: bold;
+    font-family: "EB Garamond", serif;
+}
+
+.update-lifebar:hover {
+    transition: 0.2s;
+    color: #c2185b;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+.update-sanitybar:hover {
+    transition: 0.2s;
+    color: #276bb0;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+.update-staminabar:hover {
+    transition: 0.2s;
+    color: #60c689;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}

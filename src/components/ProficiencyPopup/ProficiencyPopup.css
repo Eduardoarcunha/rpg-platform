@@ -1,0 +1,57 @@
+.proficiency-popup {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 50%;
+    height: 40%;
+    background-color: #1e1e1e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width: 1400px) {
+    .proficiency-popup {
+        width: 25%;
+        height: 30%;
+    }
+}
+@media (max-width: 800px) {
+    .proficiency-popup {
+        width: 70%;
+        height: 45%;
+    }
+}
+
+.proficiency-popup > h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.proficiency-input {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 1rem;
+}
+
+.proficiency-input > select {
+    margin-left: 1.5rem;
+    background-color: transparent;
+    outline: 0;
+    color: #999999;
+    border: 0;
+    border-bottom: 1px solid gray;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-size: medium;
+    font-style: italic;
+}
+
+.proficiency-input > select > option {
+    background-color: #1e1e1e;
+    color: white;
+}

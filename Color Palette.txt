@@ -1,0 +1,20 @@
+Color Palette
+
+Dark Mode: https://dribbble.com/shots/10677452-Color-Library-for-Dark-and-Light-Mode/attachments/2377551?mode=media
+#E91E63 - light red
+#C2185B - dark red
+#9C27B0 - purple
+#5727B0 - dark purple
+#272AB0 - dark blue
+#276BB0 - blue
+#57ACDC - light blue
+#57DCBE - light green
+#60C689 - green
+#f0a860 - yellow
+
+Tons of grey / black
+#3e3e42 - extra light grey
+#2d2d30 - light grey
+#252526 - grey
+#1e1e1e - black
+

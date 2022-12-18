@@ -1,0 +1,34 @@
+.status-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.status-container > p {
+    color: #c2185b;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 10rem;
+    border: solid #2d2d30;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bar-container > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}

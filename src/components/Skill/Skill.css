@@ -1,0 +1,61 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    border: solid #252526 1px;
+    border-radius: 0.5rem;
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0px 4px 8px #000000;
+    background-color: #1e1e1e;
+}
+
+.skill-delete {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: #999999;
+    cursor: pointer;
+}
+.skill-delete:hover {
+    transition: 0.2s;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+}
+
+.skill > h4,
+.skill > p {
+    color: white;
+    margin: 0.1rem;
+    margin-bottom: auto;
+}
+.skill > button {
+    margin-top: 0.2rem;
+    align-self: center;
+    width: fit-content;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.skill > button:hover {
+    transition: 0.2s;
+    color: #e91e63;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+}
+
+.roll-damage {
+    font-family: "EB Garamond", serif;
+}

@@ -1,0 +1,55 @@
+.fixed-dices {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
+}
+
+@media (max-width: 800px) {
+    .fixed-dices {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+}
+
+.dice-circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    border: transparent 1px solid;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px #000000;
+    margin-bottom: 1rem;
+}
+
+.dice-circle:hover {
+    transition: 1s;
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+}
+
+.dice-circle:hover {
+    transition: 1s;
+    border: 1px solid #57acdc;
+}
+.dice-circle:hover > span {
+    transition: 0.5s;
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    color: #57acdc;
+}
